@@ -13,7 +13,7 @@ export const Navbar = () => {
 	return (
 		<nav>
 			<div className='container nav__container'>
-				<Link to='/home' className='logo'>
+				<Link to='/home' className='logo' onClick={()=> setIsNavShowing(false)}>
 					<img src={Logo} alt='Nav Logo' />
 				</Link>
 				<ul
@@ -23,7 +23,9 @@ export const Navbar = () => {
 							<li key={index}>
 								<NavLink
 									to={path}
-									className={({ isActive }) => (isActive ? 'active-nav' : '')}>
+									className={({ isActive }) => (isActive ? 'active-nav' : '')}
+									onClick={() => setIsNavShowing(prev => !prev)}
+									>
 									{name}
 								</NavLink>
 							</li>
@@ -32,7 +34,7 @@ export const Navbar = () => {
 				</ul>
 				<button
 					className='nav__toggle-btn'
-					onClick={() => setIsNavShowing(!isNavShowing)}>
+					onClick={() => setIsNavShowing(prev => !prev)}>
 					{isNavShowing ? <MdOutlineClose /> : <GoThreeBars />}
 				</button>
 			</div>
