@@ -5,6 +5,7 @@ import { FAQs } from '../../components/FAQs';
 
 import './home.css';
 import { Testimonials } from '../../components/Testimonials';
+import { Footer } from '../../components/Footer';
 
 export const Home = () => {
 	return (
@@ -14,6 +15,7 @@ export const Home = () => {
 			<Values />
 			<FAQs />
 			<Testimonials />
+			<Footer/>
 		</>
 	);
 };
