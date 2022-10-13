@@ -19,8 +19,8 @@ export const Contact = () => {
         <div className="container contact__container">
           <div className="contact__wrapper">
             <a href="mailto:ricardolevi@dedaline.dev" target="_blank" rel='noreferrer noopener'><MdEmail/></a>
-            <a href="http://m.me/1495434143" target="_blank" rel='noreferrer noopener'><BsMessenger/></a>
-            <a href="https://wa.me/+5521999854134" target="_blank" rel='noreferrer noopener'><IoLogoWhatsapp/></a>
+            <a href="http://m.me/" target="_blank" rel='noreferrer noopener'><BsMessenger/></a>
+            <a href="https://wa.me/" target="_blank" rel='noreferrer noopener'><IoLogoWhatsapp/></a>
           </div>
         </div>
       </section>
